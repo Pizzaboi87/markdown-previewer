@@ -1,38 +1,77 @@
+#body {
+  background-color: #ffdfba;
+}
+
 .App {
-  text-align: center;
+  padding-bottom: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  font-family: 'Alfa Slab One', cursive;
+  color:#a25116;
+  text-shadow: 3px 3px black;
+  letter-spacing: 0.2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.subtitle {
+  font-family: 'Alfa Slab One', cursive;
+  color:#a25116;
+  text-shadow: 1px 1px black;
+  letter-spacing: 0.1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.preview, #editor {
+  background-color: #ffffba;
+  min-height: 60vh;
+}
+
+.page {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+tr{
+  border: 1px solid;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.preview {
+  font-family: 'Inter', sans-serif;
+  font-size: smaller;
+}
+
+.preview table {
+  border: 2px solid black;
+  min-width: 75%;
+  margin-bottom: 20px;
+}
+
+.preview th {
+  border: 2px solid black;
+}
+
+.preview td {
+  border: 1px solid black;
+}
+
+.preview blockquote {
+    border-left: 10px solid darkslategray;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+.preview img {
+  max-width: 50%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+  .page {
+    flex-direction: column;
+  }
+
+  #preview, #editorboard, #editor {
+    width: 100%;
+    margin: 0 auto;
   }
 }
